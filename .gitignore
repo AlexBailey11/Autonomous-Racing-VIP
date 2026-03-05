@@ -1,0 +1,22 @@
+# Ignore the ROS workspace contents — these are managed by separate repos
+ros2/ros_ws/f1tenth/
+ros2/ros_ws/f1tenth_gym/
+
+# Keep the ros_ws directory itself tracked but not its contents
+!ros2/ros_ws/
+
+# ROS build artifacts
+build/
+install/
+log/
+*.pyc
+__pycache__/
+
+# Docker
+*.tar
+
+# Editor and OS files
+.vscode/
+.idea/
+*~
+.DS_Store
