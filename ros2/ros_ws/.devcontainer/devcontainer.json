@@ -1,0 +1,15 @@
+{
+    "name": "ROS2 Dev Container",
+    "customizations": {
+        "vscode": {
+            "extensions": [
+                "ms-python.python",
+                "ms-python.vscode-pylance",
+                "ranch-hand-robotics.rde-pack"
+            ],
+            "settings": {
+                "python.defaultInterpreterPath": "/opt/ros/humble/bin/python3"
+            }
+        }
+    }
+}
