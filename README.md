@@ -52,7 +52,7 @@ To launch the container, you simply run the launch script from your terminal. It
 ```
 chmod +x launch.sh
 ```
-Then, you can simply run the script from within the `/ros` directory:
+Then, you can simply run the script from within the `/ros2` directory:
 ```
 ./launch.sh
 ```
@@ -79,4 +79,15 @@ docker exec -it vip_ros2_dev /bin/bash
 After doing so, ensure that all of the necessary bash setup has been done by sourcing the `.bashrc` file:
 ```
 source ~/.bashrc
+```
+
+**2. Building and modifying files**
+Modifications to files can be made either within the container through a command-line editor like vim or nano, or they can be made on the host outside of the container. Once files are modified and saved, those changes will be reflected in the container.
+Building modified files should be done from within the container, as it has been made to have all of the necessary dependencies and such. To do so, you can simply run:
+```
+colcon build
+```
+Or to build specific packages, like the simulation environment, run:
+```
+colcon build --packages-up-to f1tenth_gym_ros
 ```
