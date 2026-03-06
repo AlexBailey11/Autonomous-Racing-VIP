@@ -17,7 +17,7 @@ sudo docker run hello-world
 ### 2. Clone `f1tenth` and `f1tenth_gym` Repos
 To clone these repos, follow the instructions provided in the VIP's wiki. A synopsys of those instructions can be found below.
 
-**1. Create ideal folder structure**
+**1. Create ideal folder structure**  
 Ideally the structure of your host's directories is set up the same as below. Note, the workspace directory and repos will be set up in later steps.
 ```
 Autonomous-Racing-VIP
@@ -30,8 +30,8 @@ Autonomous-Racing-VIP
         ├── f1tenth_gym
         └── setup_gym.sh
 ```
-**2. Clone the repos**
-More information about this step can be found on the VIP's wiki. Below are the high level instructions for what to do.
+**2. Clone the repos**  
+More information about this step can be found on the VIP's wiki. Below are the high level instructions for what to do.  
 Move to the workspace directory and clone the necessary repos:
 ```
 cd ros_ws
@@ -71,7 +71,7 @@ Then, run the script:
 ## Usage
 Below are some useful commands for using the container for working with the simulator and car.
 
-**1. Opening another terminal**
+**1. Opening another terminal**  
 To open another terminal so that you can run multiple ros processes simultaneously, utilize the following command on your host:
 ```
 docker exec -it vip_ros2_dev /bin/bash
@@ -81,8 +81,8 @@ After doing so, ensure that all of the necessary bash setup has been done by sou
 source ~/.bashrc
 ```
 
-**2. Building and modifying files**
-Modifications to files can be made either within the container through a command-line editor like vim or nano, or they can be made on the host outside of the container. Once files are modified and saved, those changes will be reflected in the container.
+**2. Building and modifying files**  
+Modifications to files can be made either within the container through a command-line editor like vim or nano, or they can be made on the host outside of the container. Once files are modified and saved, those changes will be reflected in the container.  
 Building modified files should be done from within the container, as it has been made to have all of the necessary dependencies and such. To do so, you can simply run:
 ```
 colcon build
