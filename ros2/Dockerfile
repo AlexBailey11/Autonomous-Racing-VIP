@@ -94,7 +94,8 @@ RUN pip3 install \
     pyopengl \
     pyyaml \
     scipy \
-    transforms3d
+    transforms3d \
+    cvxopt
 
 # =====
 # Set up workspace as ros user
